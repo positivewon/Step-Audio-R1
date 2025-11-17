@@ -29,6 +29,10 @@ Key features:
 * **Solves Inverted Scaling:** We reverse the audio anomaly. Longer, more deliberate reasoning chains now lead to *better* answers, transforming deliberation from a liability into a powerful asset.
 * **Novel MGRD Framework:** We introduce **Modality-Grounded Reasoning Distillation**, an iterative self-distillation method that progressively shifts the model's reasoning from textual abstractions (e.g., "sad lyrics") to acoustic properties (e.g., "minor key progressions").
 * **Powerful & Efficient Architecture:** Built on a frozen **Qwen2 audio encoder** and a **Qwen2.5 32B LLM decoder**, our architecture is optimized for deep audio reasoning.
+
+<p align="center">
+    <img src="assets/Benchmark.png" width="80%"/>
+<p>
   
 ### Introduction
 Chain-of-Thought (CoT) reasoning has transformed AI, enabling models to solve complex problems by "thinking step-by-step." Allocating more computation at inference time—longer reasoning—predictably improves performance in text and vision. In audio, existing models show inverted scaling behavior: performance systematically gets worse as reasoning chains get longer. This has led to a critical question:
