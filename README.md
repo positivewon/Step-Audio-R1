@@ -18,11 +18,11 @@
 
 ## Overview
 ### Introduction
-In audio, existing models show inverted scaling behavior: performance systematically gets worse as reasoning chains get longer. This has led to a critical question:
+Chain-of-Thought (CoT) reasoning has transformed AI, enabling models to solve complex problems by "thinking step-by-step." Allocating more computation at inference time—longer reasoning—predictably improves performance in text and vision. In audio, existing models show inverted scaling behavior: performance systematically gets worse as reasoning chains get longer. This has led to a critical question:
 
-Is audio inherently resistant to deliberate reasoning?
+**Is audio inherently resistant to deliberate reasoning?**
 
-**Our answer is No.** Through systematic analysis, we found the root cause: models aren't reasoning about *audio*; they're reasoning about *text transcripts*.
+Our answer is **No**. Through systematic analysis, we found the root cause: models aren't reasoning about *audio*; they're reasoning about *text transcripts*.
 
 * **The Problem: Textual Surrogate Reasoning.** When asked why music sounds "melancholic," models reason about "lyrics mentioning sadness" (text) instead of "minor key progressions and descending melodic contours" (audio).
 * **The Cause:** These models inherit text-based reasoning from their initialization, creating a fundamental **modality mismatch**.
