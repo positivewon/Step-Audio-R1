@@ -55,6 +55,21 @@ This new approach allows us to create **StepAudio-R1**, which:
     <img src="assets/Benchmark.png" width="80%"/>
 <p>
 
+### Introduction
+StepAudio-R1 is the **first audio language model to successfully unlock Chain-of-Thought (CoT) reasoning**. It decisively solves the "inverted scaling" problem that plagues existing models, where performance *degrades* with longer reasoning. StepAudio-R1 is the first model to demonstrate that for audio, like text and vision, allocating more compute at test-time *predictably improves* performance.
+
+We found the root cause of this anomaly: models were engaging in **textual surrogate reasoning** (analyzing transcripts, not audio) due to a modality mismatch. To solve this, we introduce **Modality-Grounded Reasoning Distillation (MGRD)**, an iterative training framework that shifts the model's reasoning from textual abstractions to acoustic properties.
+
+This new approach allows us to create **StepAudio-R1**, which:
+* Is the **first audio reasoning model** that successfully benefits from test-time compute scaling.
+* **Surpasses Gemini 2.5 Pro** across comprehensive audio benchmarks.
+* Transforms extended deliberation from a liability into a **powerful asset** for audio intelligence.
+
+<p align="center">
+    <img src="assets/Benchmark.png" width="80%"/>
+<p>
+
+
 ### Model Architecture
 
 <p align="center">
