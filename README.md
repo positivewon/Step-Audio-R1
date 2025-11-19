@@ -5,16 +5,16 @@
 
 <div align="center">
     <a href="https://stepaudiollm.github.io/step-audio-r1/"><img src="https://img.shields.io/static/v1?label=Demo%20Page&message=Web&color=green"></a> &ensp;
-  <a href="https://arxiv.org/abs/2511.03601"><img src="https://img.shields.io/static/v1?label=Tech%20Report&message=Arxiv&color=red"></a> &ensp;
+  <a href=""><img src="https://img.shields.io/static/v1?label=Tech%20Report&message=Arxiv&color=red"></a> &ensp;
   <a href="https://huggingface.co/stepfun-ai/Step-Audio-R1"><img src="https://img.shields.io/static/v1?label=Step-Audio-R1&message=HuggingFace&color=yellow"></a> &ensp;
     <a href="https://modelscope.cn/models/stepfun-ai/Step-Audio-R1"><img src="https://img.shields.io/static/v1?label=Step-Audio-R1&message=ModelScope&color=blue"></a> &ensp;
   <a href="https://huggingface.co/spaces/stepfun-ai/Step-Audio-R1"><img src="https://img.shields.io/static/v1?label=Space%20Playground&message=HuggingFace&color=yellow"></a> &ensp;
 </div>
 
 ## 🔥🔥🔥 News!!
-* Nov 19, 2025: 📦 We release the **optimized inference code** and **model weights** of **Step-Audio-R1** ([HuggingFace](https://huggingface.co/stepfun-ai/Step-Audio-R1);  [ModelScope](https://modelscope.cn/models/stepfun-ai/Step-Audio-R1)) and **Step-Audio-Tokenizer**([HuggingFace](https://huggingface.co/stepfun-ai/Step-Audio-Tokenizer);  [ModelScope](https://modelscope.cn/models/stepfun-ai/Step-Audio-Tokenizer))
+* Nov 19, 2025: 📦 We release the **optimized inference code** and **model weights** of **Step-Audio-R1** ([HuggingFace](https://huggingface.co/stepfun-ai/Step-Audio-R1) and [ModelScope](https://modelscope.cn/models/stepfun-ai/Step-Audio-R1))
 * Nov 19, 2025: ✨ [Demo Page](https://stepaudiollm.github.io/step-audio-r1/) ; 🎮  [HF Space Playground](https://huggingface.co/spaces/stepfun-ai/Step-Audio-R1)
-* Nov 19, 2025: 👋 We release the technical report of [Step-Audio-R1](https://arxiv.org/abs/2511.03601).
+* Nov 19, 2025: 👋 We release the technical report of [Step-Audio-R1]().
 
 ## Overview
 
@@ -25,7 +25,7 @@ We found the root cause of this anomaly: models were engaging in **textual surro
 
 This new approach allows us to create **Step-Audio-R1**, which:
 * Is the **first audio reasoning model** that successfully benefits from test-time compute scaling.
-* **Surpasses Gemini 2.5 Pro** across comprehensive audio benchmarks.
+* **Surpasses Gemini 2.5 Pro and is comparable to Gemini 3** across comprehensive audio benchmarks.
 * Transforms extended deliberation from a liability into a **powerful asset** for audio intelligence.
 
 <p align="center">
