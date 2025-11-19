@@ -31,7 +31,7 @@ Key features:
 * **Powerful & Efficient Architecture:** Built on a frozen **Qwen2 audio encoder** and a **Qwen2.5 32B LLM decoder**, our architecture is optimized for deep audio reasoning.
 
 <p align="center">
-    <img src="assets/Benchmark.png" width="80%"/>
+    <img src="assets/benchmark.jpg" width="80%"/>
 <p>
   
 ### Introduction
@@ -52,7 +52,7 @@ This new approach allows us to create **Step-Audio-R1**, which:
 * Transforms extended deliberation from a liability into a **powerful asset** for audio intelligence.
 
 <p align="center">
-    <img src="assets/Benchmark.png" width="80%"/>
+    <img src="assets/benchmark.jpg" width="80%"/>
 <p>
 
 ### Introduction
@@ -66,7 +66,7 @@ This new approach allows us to create **Step-Audio-R1**, which:
 * Transforms extended deliberation from a liability into a **powerful asset** for audio intelligence.
 
 <p align="center">
-    <img src="assets/Benchmark.png" width="80%"/>
+    <img src="assets/benchmark.jpg" width="80%"/>
 <p>
 
 
