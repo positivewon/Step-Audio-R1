@@ -13,7 +13,7 @@
 
 ## 🔥🔥🔥 News!!
 * Nov 19, 2025: 🎉 We release **Step-Audio-R1**, including the [Demo Page](https://stepaudiollm.github.io/step-audio-r1/) and model weights ([HuggingFace](https://huggingface.co/stepfun-ai/Step-Audio-R1)).
-* Nov 19, 2025: 📄 We release the technical report of [Step-Audio-R1]().
+* Nov 19, 2025: 👋 We release the technical report of [Step-Audio-R1]().
 
 ## 📑 Open-source Plan
 - [ ] Inference Code (vLLM)
@@ -60,5 +60,9 @@ This ensures the model's reasoning is not merely about the transcribed text but 
 ## Citation
 
 If you find our paper and code useful in your research, please consider giving a star :star: and citation :pencil: :)
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=stepfun-ai/Step-Audio-R1&type=Date)](https://star-history.com/#stepfun-ai/Step-Audio-R1&Date)
 
 <br>
