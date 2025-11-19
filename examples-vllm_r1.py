@@ -191,7 +191,7 @@ def Speaker_Trait_Inference(model):
 
 if __name__ == '__main__':
     # 修改为新的API URL和模型名称
-    api_url = "http://100.99.28.120:9999/v1/chat/completions"
+    api_url = "http://localhost:9999/v1/chat/completions"
     model_name = "step-audio-2-r1"
     
     model = StepAudioR1(api_url, model_name)
