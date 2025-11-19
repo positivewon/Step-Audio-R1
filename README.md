@@ -17,43 +17,6 @@
 * Nov 19, 2025: 👋 We release the technical report of [Step-Audio-R1](https://arxiv.org/abs/2511.03601).
 
 ## Overview
-### Introduction
-
-Step-Audio-R1 is the **first audio language model to successfully unlock Chain-of-Thought (CoT) reasoning**. It decisively solves the "inverted scaling" problem that plagues existing models, where performance *degrades* with longer reasoning. Step-Audio-R1 is the first model to demonstrate that for audio, like text and vision, allocating more compute at test-time *predictably improves* performance.
-
-We found the root cause of this anomaly: models were engaging in **textual surrogate reasoning** (analyzing transcripts, not audio) due to a modality mismatch. We solve this with a new training framework, **Modality-Grounded Reasoning Distillation (MGRD)**, that teaches the model "native audio think."
-
-Key features:
-
-* **State-of-the-Art Reasoning:** The first audio model that truly benefits from step-by-step deliberation. Step-Audio-R1 **surpasses Gemini 2.5 Pro** across comprehensive audio benchmarks.
-* **Solves Inverted Scaling:** We reverse the audio anomaly. Longer, more deliberate reasoning chains now lead to *better* answers, transforming deliberation from a liability into a powerful asset.
-* **Novel MGRD Framework:** We introduce **Modality-Grounded Reasoning Distillation**, an iterative self-distillation method that progressively shifts the model's reasoning from textual abstractions (e.g., "sad lyrics") to acoustic properties (e.g., "minor key progressions").
-* **Powerful & Efficient Architecture:** Built on a frozen **Qwen2 audio encoder** and a **Qwen2.5 32B LLM decoder**, our architecture is optimized for deep audio reasoning.
-
-<p align="center">
-    <img src="assets/benchmark.jpg" width="80%"/>
-<p>
-  
-### Introduction
-Chain-of-Thought (CoT) reasoning has transformed AI, enabling models to solve complex problems by "thinking step-by-step." Allocating more computation at inference time—longer reasoning—predictably improves performance in text and vision. In audio, existing models show inverted scaling behavior: performance systematically gets worse as reasoning chains get longer. This has led to a critical question:
-
-**Is audio inherently resistant to deliberate reasoning?**
-
-Our answer is **No**. Through systematic analysis, we found the root cause: models aren't reasoning about *audio*; they're reasoning about *text transcripts*.
-
-* The Problem: Textual Surrogate Reasoning. When asked why music sounds "melancholic," models reason about "lyrics mentioning sadness" (text) instead of "minor key progressions and descending melodic contours" (audio).
-* The Cause: These models inherit text-based reasoning from their initialization, creating a fundamental modality mismatch.
-
-To solve this, we introduce **Modality-Grounded Reasoning Distillation (MGRD)**, an iterative training framework that shifts the model's reasoning from textual abstractions to acoustic properties.
-
-This new approach allows us to create **Step-Audio-R1**, which:
-* Is the **first audio reasoning model** that successfully benefits from test-time compute scaling.
-* **Surpasses Gemini 2.5 Pro** across comprehensive audio benchmarks.
-* Transforms extended deliberation from a liability into a **powerful asset** for audio intelligence.
-
-<p align="center">
-    <img src="assets/benchmark.jpg" width="80%"/>
-<p>
 
 ### Introduction
 Step-Audio-R1 is the **first audio language model to successfully unlock Chain-of-Thought (CoT) reasoning**. It decisively solves the "inverted scaling" problem that plagues existing models, where performance *degrades* with longer reasoning. Step-Audio-R1 is the first model to demonstrate that for audio, like text and vision, allocating more compute at test-time *predictably improves* performance.
@@ -66,7 +29,7 @@ This new approach allows us to create **Step-Audio-R1**, which:
 * Transforms extended deliberation from a liability into a **powerful asset** for audio intelligence.
 
 <p align="center">
-    <img src="assets/benchmark.jpg" width="80%"/>
+    <img src="assets/Benchmark.jpg" width="80%"/>
 <p>
 
 
