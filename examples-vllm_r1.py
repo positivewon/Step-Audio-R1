@@ -1,10 +1,25 @@
+"""
+Step-Audio-R1 Examples with vLLM
+
+This script demonstrates various audio understanding capabilities of Step-Audio-R1:
+- Audio Understanding (MMAU, MMSU)
+- Math Audio Question Answering
+- Audio Reasoning (MMAR)
+- Wild Speech Processing
+- Universal Audio Caption
+- Song Appreciation
+- Speaker Trait Inference
+"""
+
 from stepaudior1vllm import StepAudioR1
-# from token2wav import Token2wav
 
 
+# ============================================================================
+# Audio Understanding Tasks
+# ============================================================================
 
-# Audio understanding
 def mmau_test(model):
+    """Test multi-modal audio understanding with multiple choice questions."""
     messages = [
         {"role": "human", "content": [
             {"type": "audio", "audio": "assets/mmau_test.wav"},
@@ -25,7 +40,9 @@ def mmau_test(model):
 
     print("\n\nFull response:", full_text)
 
+
 def mmsu_test(model):
+    """Test multi-modal sound understanding for non-verbal sounds."""
     messages = [
         {"role": "human", "content": [
             {"type": "audio", "audio": "assets/mmsu_test.wav"},
@@ -46,8 +63,13 @@ def mmsu_test(model):
 
     print("\n\nFull response:", full_text)
 
-# math audio question answering
+
+# ============================================================================
+# Math Audio Question Answering
+# ============================================================================
+
 def spoken_mqa_test(model):
+    """Test mathematical reasoning with spoken audio questions."""
     messages = [
         {"role": "human", "content": [
             {"type": "audio", "audio": "assets/spoken_mqa_test.wav"},
@@ -68,7 +90,9 @@ def spoken_mqa_test(model):
 
     print("\n\nFull response:", full_text)
 
+
 def big_bench_audio_test(model):
+    """Test comprehensive audio understanding with BigBench Audio tasks."""
     messages = [
         {"role": "human", "content": [
             {"type": "audio", "audio": "assets/big_bench_audio_test.wav"},
@@ -89,7 +113,13 @@ def big_bench_audio_test(model):
 
     print("\n\nFull response:", full_text)
 
+
+# ============================================================================
+# Audio Reasoning Tasks
+# ============================================================================
+
 def mmar_test(model):
+    """Test multi-modal audio reasoning with contextual understanding."""
     messages = [
         {"role": "human", "content": [
             {"type": "audio", "audio": "assets/mmar_test.wav"},
@@ -110,7 +140,13 @@ def mmar_test(model):
 
     print("\n\nFull response:", full_text)
 
+
+# ============================================================================
+# Wild Speech Processing
+# ============================================================================
+
 def wild_speech_test(model):
+    """Test automatic speech recognition in challenging acoustic conditions."""
     messages = [
         {"role": "human", "content": [
             {"type": "audio", "audio": "assets/wild_speech_test.wav"}
@@ -131,8 +167,12 @@ def wild_speech_test(model):
     print("\n\nFull response:", full_text)
 
 
-# Universal audio caption
+# ============================================================================
+# Universal Audio Caption
+# ============================================================================
+
 def uac_test(model):
+    """Test universal audio caption generation with detailed analysis."""
     messages = [
         {"role": "system", "content": "你是一位经验丰富的音频分析专家，擅长对各种语音音频进行深入细致的分析。你的任务不仅仅是将音频内容准确转写为文字，还要对说话人的声音特征（如性别、年龄、情绪状态）、背景声音、环境信息以及可能涉及的事件进行全面描述。请以专业、客观的视角，详细、准确地完成每一次分析和转写。"},
         {"role": "human", "content": [{"type": "audio", "audio": "assets/music_playing_followed_by_a_woman_speaking.wav"}]},
@@ -149,7 +189,13 @@ def uac_test(model):
         traceback.print_exc()
     print("\n\nFull response:", full_text)
 
+
+# ============================================================================
+# Music and Song Analysis
+# ============================================================================
+
 def song_appreciation(model):
+    """Test song appreciation and music analysis capabilities."""
     messages = [
         {"role": "system", "content": "你是一个语音助手，你有非常丰富的音频处理经验。"},
         {"role": "human", "content": [
@@ -169,7 +215,13 @@ def song_appreciation(model):
         traceback.print_exc()
     print("\n\nFull response:", full_text)
 
+
+# ============================================================================
+# Speaker Analysis
+# ============================================================================
+
 def Speaker_Trait_Inference(model):
+    """Test speaker trait inference from voice characteristics."""
     messages = [
         {"role": "system", "content": "你是一个语音助手，你有非常丰富的音频处理经验。"},
         {"role": "human", "content": [
@@ -189,23 +241,45 @@ def Speaker_Trait_Inference(model):
         traceback.print_exc()
     print("\n\nFull response:", full_text)
 
+
+# ============================================================================
+# Main Execution
+# ============================================================================
+
 if __name__ == '__main__':
-    # 修改为新的API URL和模型名称
+    # Initialize the model with API configuration
     api_url = "http://localhost:9999/v1/chat/completions"
     model_name = "step-audio-2-r1"
     
     model = StepAudioR1(api_url, model_name)
     
+    # Run all test cases
+    print("=" * 80)
+    print("Running Step-Audio-R1 Test Suite")
+    print("=" * 80)
     
-    
+    # Music and Creative Analysis
     song_appreciation(model)
     Speaker_Trait_Inference(model)
+    
+    # Universal Audio Caption
     uac_test(model)
+    
+    # Math and Reasoning Tasks
     spoken_mqa_test(model)
+    
+    # Audio Understanding Tasks
     mmau_test(model)
     mmsu_test(model)
     big_bench_audio_test(model)
+    
+    # Audio Reasoning
     mmar_test(model)
+    
+    # Wild Speech Processing
     wild_speech_test(model)
     
-   
+    print("=" * 80)
+    print("Test Suite Completed")
+    print("=" * 80)
+
