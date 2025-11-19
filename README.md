@@ -24,9 +24,9 @@
 ## Overview
 
 ### Introduction
-Step-Audio-R1 is the **first audio language model to successfully unlock Chain-of-Thought (CoT) reasoning**. It decisively solves the "inverted scaling" problem that plagues existing models, where performance *degrades* with longer reasoning. Step-Audio-R1 is the first model to demonstrate that for audio, like text and vision, allocating more compute at test-time *predictably improves* performance.
+Step-Audio-R1 is the **first audio language model to successfully unlock test-time compute scaling**. It decisively solves the "inverted scaling" anomaly plaguing existing models, where performance paradoxically degrades with longer reasoning chains.
 
-We found the root cause of this anomaly: models were engaging in **textual surrogate reasoning** (analyzing transcripts, not audio) due to a modality mismatch. To solve this, we introduce **Modality-Grounded Reasoning Distillation (MGRD)**, an iterative training framework that shifts the model's reasoning from textual abstractions to acoustic properties.
+We identify the root cause of this failure as **Textual Surrogate Reasoning**: conventional models, due to text-based initialization, rely on linguistic abstractions (analyzing transcripts) rather than genuine acoustic properties. To resolve this modality mismatch, we introduce **Modality-Grounded Reasoning Distillation (MGRD)**, an iterative training framework that shifts the model's reasoning focus from textual surrogates to acoustic analysis.
 
 This new approach allows us to create **Step-Audio-R1**, which:
 * Is the **first audio reasoning model** that successfully benefits from test-time compute scaling.
