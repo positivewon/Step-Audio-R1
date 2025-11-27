@@ -178,6 +178,14 @@ python examples-vllm_r1.py
 ## Citation
 
 If you find our paper and code useful in your research, please consider giving a star :star: and citation :pencil: :)
+```bash
+@article{tian2025step,
+  title={Step-Audio-R1 Technical Report},
+  author={Tian, Fei and Zhang, Xiangyu Tony and Zhang, Yuxin and Zhang, Haoyang and Li, Yuxin and Liu, Daijiao and Deng, Yayue and Wu, Donghang and Chen, Jun and Zhao, Liang and others},
+  journal={arXiv preprint arXiv:2511.15848},
+  year={2025}
+}
+```
 
 ## Star History
 
