@@ -12,8 +12,9 @@
 </div>
 
 ## 🔥🔥🔥 News!!
+* Jan 1, 2026: 🚀 We release the inference code and model weights of **Step-Audio-R1.1** ([HuggingFace](https://huggingface.co/stepfun-ai/Step-Audio-R1.1)
 * Nov 27, 2025: 🎉 We release the inference code and model weights of **Step-Audio-R1** ([HuggingFace](https://huggingface.co/stepfun-ai/Step-Audio-R1); [ModelScope](https://modelscope.cn/models/stepfun-ai/Step-Audio-R1))
-* Nov 27, 2025: 🎮 We released the [HF Space Playground](https://huggingface.co/spaces/stepfun-ai/Step-Audio-R1)
+* Nov 27, 2025: 🎮 We released the [HF Space Playground](https://www.stepfun.com/studio/audio?tab=conversation)
 * Nov 19, 2025: 🎉 We release the [Demo Page](https://stepaudiollm.github.io/step-audio-r1/) 
 * Nov 19, 2025: 👋 We release the technical report of [Step-Audio-R1](Step-Audio-R1.pdf).
 
@@ -22,7 +23,35 @@
 - [x] Online demo (Gradio)
 - [x] Model Checkpoints
 
-## Overview
+## Overview of R1.1
+
+### Introduction
+Step-Audio R1.1 (Realtime) is a major upgrade to Step-Audio-R1, designed for interactive spoken dialogue with both **real-time responsiveness** and **strong reasoning capability**.  
+Unlike conventional streaming speech models that trade intelligence for latency, R1.1 enables *thinking while speaking*, achieving high intelligence without sacrificing speed.
+
+### Mind-Paced Speaking (Low Latency)
+Based on the research *Mind-Paced Speaking*[Mind-Paced Speaking](MPS.pdf), the Realtime variant adopts a **Dual-Brain Architecture**:
+- A **Formulation Brain** responsible for high-level reasoning
+- An **Articulation Brain** dedicated to speech generation
+
+This decoupling allows the model to perform **Chain-of-Thought reasoning during speech output**, maintaining ultra-low latency while handling complex tasks in real time.
+
+### Acoustic-Grounded Reasoning (High Intelligence)
+To address the *inverted scaling* issue—where reasoning over transcripts can degrade performance—Step-Audio R1.1 grounds its reasoning directly in **acoustic representations** rather than text alone.
+
+Through **iterative self-distillation**, extended deliberation becomes a strength instead of a liability. This enables effective test-time compute scaling and leads to **state-of-the-art performance**, including top-ranking results on the AA benchmark.
+
+<p align="center">
+    <img src="assets/AA_reasoning.png" width="80%"/>
+<p>
+<p align="center">
+    <img src="assets/AA_speed.png" width="80%"/>
+<p>
+<p align="center">
+    <img src="assets/AA_reasoning_price.png" width="80%"/>
+<p>
+  
+## Overview of R1
 
 ### Introduction
 Step-Audio-R1 is the **first audio language model to successfully unlock test-time compute scaling**. It decisively solves the "inverted scaling" anomaly plaguing existing models, where performance paradoxically degrades with longer reasoning chains.
