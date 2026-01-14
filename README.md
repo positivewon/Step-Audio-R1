@@ -12,7 +12,7 @@
 </div>
 
 ## 🔥🔥🔥 News!!
-* Jan 1, 2026: 🚀 We release the inference code and model weights of **Step-Audio-R1.1** ([HuggingFace](https://huggingface.co/stepfun-ai/Step-Audio-R1.1)
+* Jan 1, 2026: 🚀 We release the inference code and model weights of **Step-Audio-R1.1** ([HuggingFace](https://huggingface.co/stepfun-ai/Step-Audio-R1.1))
 * Nov 27, 2025: 🎉 We release the inference code and model weights of **Step-Audio-R1** ([HuggingFace](https://huggingface.co/stepfun-ai/Step-Audio-R1); [ModelScope](https://modelscope.cn/models/stepfun-ai/Step-Audio-R1))
 * Nov 27, 2025: 🎮 We released the [HF Space Playground](https://www.stepfun.com/studio/audio?tab=conversation)
 * Nov 19, 2025: 🎉 We release the [Demo Page](https://stepaudiollm.github.io/step-audio-r1/) 
@@ -27,10 +27,11 @@
 
 ### Introduction
 Step-Audio R1.1 (Realtime) is a major upgrade to Step-Audio-R1, designed for interactive spoken dialogue with both **real-time responsiveness** and **strong reasoning capability**.  
+
 Unlike conventional streaming speech models that trade intelligence for latency, R1.1 enables *thinking while speaking*, achieving high intelligence without sacrificing speed.
 
 ### Mind-Paced Speaking (Low Latency)
-Based on the research *Mind-Paced Speaking*[Mind-Paced Speaking](MPS.pdf), the Realtime variant adopts a **Dual-Brain Architecture**:
+Based on the research [*Mind-Paced Speaking*](MPS.pdf), the Realtime variant adopts a **Dual-Brain Architecture**:
 - A **Formulation Brain** responsible for high-level reasoning
 - An **Articulation Brain** dedicated to speech generation
 
