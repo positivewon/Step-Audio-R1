@@ -43,13 +43,13 @@ To address the *inverted scaling* issue—where reasoning over transcripts can d
 Through **iterative self-distillation**, extended deliberation becomes a strength instead of a liability. This enables effective test-time compute scaling and leads to **state-of-the-art performance**, including top-ranking results on the AA benchmark.
 
 <p align="center">
-    <img src="assets/AA_reasoning.png" width="80%"/>
+    <img src="assets/AA_reasoning.png" width="100%"/>
 <p>
 <p align="center">
-    <img src="assets/AA_speed.png" width="80%"/>
+    <img src="assets/AA_speed.png" width="100%"/>
 <p>
 <p align="center">
-    <img src="assets/AA_reasoning_price.png" width="80%"/>
+    <img src="assets/AA_reasoning_price.png" width="100%"/>
 <p>
   
 ## Overview of R1
